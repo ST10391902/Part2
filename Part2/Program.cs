@@ -16,8 +16,10 @@ namespace RecipeApp
                 Console.WriteLine("\nMenu:");
                 Console.WriteLine("1. Add a recipe");
                 Console.WriteLine("2. Display recipes");
-                Console.WriteLine("3. Enter your choice: ");
+                Console.WriteLine("3.Delete recipe");
+                Console.WriteLine("4. Exit: ");
                 Console.Write("Enter your choice: ");
+
                 string choice = Console.ReadLine();
 
                 switch (choice)
@@ -29,6 +31,9 @@ namespace RecipeApp
                         DisplayRecipes(recipeManager);
                         break;
                     case "3":
+                      //  DeleteRecipes(recipeManager); //
+                        break;
+                    case "4":
                         exit = true;
                         break;
                     default:
